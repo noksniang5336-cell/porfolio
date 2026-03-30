@@ -114,7 +114,7 @@ nav .logo {
   position: fixed;
   width: 100%;
   z-index: 50;
-background-color: #470934; 
+  background: linear-gradient(#18043f, #280662);
 }
 
 nav h1 {
