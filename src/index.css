@@ -57,7 +57,7 @@ nav .logo {
   text-align: center;
   padding: 10%;
   position: absolute;
-  background-color: black;
+  background-color: transparent;
   
 }
 
@@ -114,7 +114,7 @@ nav .logo {
   position: fixed;
   width: 100%;
   z-index: 50;
-  background-color: rgba(0, 0, 255, 0.768);
+  background: linear-gradient(#18043f, #280662);
  
 }
 
@@ -132,7 +132,8 @@ nav h1 {
   color: white;
   padding: 10px 20px ;
   border-radius: 20px;
-font-size: 14px;
+  font-size: 14px;
+  align-items: right;
 }
 
   
