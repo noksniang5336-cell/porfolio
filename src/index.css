@@ -129,6 +129,21 @@ nav h1 {
 .lien {
   display: none;
 }
+.lien_mobile {
+  position: fixed;   /* important */
+  top: 0;
+  right: 0;          /* colle à droite */
+  width: 70%;        /* largeur du menu */
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+
+  background-color: #280662;
+  z-index: 1000;
+}
 
 .about {
   background-color: goldenrod;
