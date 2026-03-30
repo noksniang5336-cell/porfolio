@@ -2,9 +2,9 @@ import React from "react";
 
 const skillsData = [
   { name: "HTML", level: 90 },
-  { name: "CSS", level: 85 },
-  { name: "JavaScript", level: 80 },
-  { name: "React", level: 75 },
+  { name: "CSS", level: 15 },
+  { name: "JavaScript", level: 5 },
+  { name: "React", level: 15 },
   { name: "Laravel", level: 70 },
   { name: "Git / GitHub", level: 80 },
 ];

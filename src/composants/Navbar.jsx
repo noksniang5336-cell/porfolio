@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav> 
-       
+        
 
         {/* au milieu */}
 
@@ -19,7 +19,7 @@ const Navbar = () => {
               <NavLink to="/">
                 <p>Accueil</p>
               </NavLink>
-              <NavLink to="/Project">
+              <NavLink to="/project">
                <p>Projets</p>
               </NavLink>
               <NavLink to="/contact" >
@@ -29,11 +29,11 @@ const Navbar = () => {
 
         {/* droite */}
          <div className="menu">
-             <NavLink to="/Apropos">
-               <button className="bb">Apropos</button>
-                </NavLink>
-               </div>
-        
+            <div className="about">About</div>
+            <IoMenu 
+             onClick={() => setOpenMenu(!openMenu)}
+            className='burguer'  size={30} />
+         </div>
 
          {/* volet  */}
 
@@ -43,7 +43,7 @@ const Navbar = () => {
               <NavLink to="/">
                 <p>Accueil</p>
               </NavLink>
-              <NavLink to="/Projets">
+              <NavLink to="/projets">
                <p>Projets</p>
               </NavLink>
               <NavLink to="/contact" >

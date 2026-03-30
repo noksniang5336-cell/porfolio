@@ -1,17 +1,26 @@
-/* RESET */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-    
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  font-family: Roboto;
+  
 }
 
+body {
+  background: linear-gradient(#18043f, #280662);
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+}
 
 /* -------------navbar ------------ */
 
 nav {
-  background: linear-gradient(to bottom, #18043f, #280662);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,11 +29,13 @@ nav {
   color: white;
   position: relative;
  
-
- 
 }
 
-
+nav .logo {
+  height: 120px;
+  width: 150px;
+   font-weight: bold;
+}
 
 /* lien */
 .lien {
@@ -53,7 +64,7 @@ nav {
 
 
 .lien p , .lien_mobile p {
-  color:white;
+  color:rgb(255, 255, 255);
  
 }
 .lien p:hover {
@@ -250,8 +261,6 @@ font-size: 14px;
 }
 
 .detail {
-     background: linear-gradient( #18043f, #280662);
-
   padding: 40px;
   min-height: 100vh;
   color: white;
@@ -383,6 +392,7 @@ h1 {
 /* Titre "À propos de moi" */
 .bo {
   font-size: 42px;
+  margin-bottom: 40px;
   position: relative;
   display: inline-block;
 }
@@ -404,6 +414,7 @@ h1 {
   line-height: 1.8;         /* Augmente l'espace entre les lignes */
   max-width: 800px;         /* Limite la largeur pour une lecture confortable */
   color: #d1d1d1;           /* Gris clair pour ne pas être trop agressif */
+  margin: 0 auto;           /* Centre le bloc de texte */
 }
 
 
@@ -426,62 +437,6 @@ h1 {
     font-size: 16px;
     text-align: justify;    
   }
-}
-
-.skills {
-  padding: 60px 20px;
-  text-align: center;
-  background: linear-gradient( #18043f, #280662);
-}
-
-.skills h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #e9e7ee;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.skill-card {
-  background: white;
-  padding: 20px;
-  width: 250px;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  text-align: left;
-  position: relative;
-}
-
-.skill-card h3 {
-  margin-bottom: 10px;
-  color: #280662;
-}
-
-.skill-bar {
-  width: 100%;
-  height: 10px;
-  background: #e0e0e0;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.skill-level {
-  height: 100%;
-  background: #a78bfa;
-  border-radius: 5px;
-}
-
-.skill-card span {
-  position: absolute;
-  right: 15px;
-  top: 20px;
-  font-weight: bold;
-  color: #280662;
 }
 .contact {
   padding: 80px;
@@ -528,6 +483,62 @@ h1 {
   background: #fff;
   cursor: pointer;
   font-weight: bold;
+}
+.skills {
+  padding: 60px 20px;
+  text-align: center;
+    background: linear-gradient( #18043f, #280662);
+
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fbfafd;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: left;
+  position: relative;
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  color: #280662;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background: #a78bfa;
+  border-radius: 5px;
+}
+
+.skill-card span {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-weight: bold;
+  color: #280662;
 }
 /* --- RESPONSIVE MOBILE --- */
 
