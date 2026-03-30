@@ -1,0 +1,483 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+    
+}
+
+
+/* -------------navbar ------------ */
+
+nav {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  height: 8vh;
+  color: white;
+  position: relative;
+ 
+
+ 
+}
+
+
+
+/* lien */
+.lien {
+  display: flex;
+  gap: 50px;
+  top: 100px;
+  left: 200px;
+  
+}
+
+.lien_mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  top: 8vh;
+  right: 0;
+  width: 70%;
+  height: 90vh;
+  text-align: center;
+  padding: 10%;
+  position: absolute;
+  background-color: black;
+  
+}
+
+
+
+.lien p , .lien_mobile p {
+  color:white;
+ 
+}
+.lien p:hover {
+  color: goldenrod;
+   transition:  0.2s ease-in;
+   text-decoration: underline;
+}
+
+
+.about {
+  background-color: goldenrod;
+  color: white;
+  padding: 10px 30px ;
+  border-radius: 20px;
+}
+
+.about:hover {
+  background-color: black;
+  color: white;
+  transition:  0.4s ease-in;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.burguer {
+  display: none;
+}
+
+
+/* mobil nav  */
+
+@media (max-width:500px) {
+
+  .burguer {
+    display: block;
+  }
+
+  nav {
+ 
+  padding: 0 10px;
+  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background-color: rgba(0, 0, 255, 0.768);
+ 
+}
+
+nav h1 {
+   font-size: 25px  ;
+   font-weight: bold;
+}
+
+.lien {
+  display: none;
+}
+
+.about {
+  background-color: goldenrod;
+  color: white;
+  padding: 10px 20px ;
+  border-radius: 20px;
+font-size: 14px;
+}
+
+  
+}
+
+
+.bb{
+   padding: 10px 20px;
+    background-color: rgb(249, 250, 245);
+    color: rgb(13, 0, 1);
+    border: none;
+    border-radius: 10px;
+}
+.bb:hover{
+    transform: scale(1.05); 
+    background-color: #6f0658;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;          
+  padding: 80px 10%;            
+  background: linear-gradient(#18043f, #280662);
+  min-height: 80vh;              
+  gap: 40px;                    
+}
+
+.hero-content {
+  flex: 1;                       
+  display: flex;
+  flex-direction: column;       
+  align-items: flex-start;      
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: #fffcfc;
+  margin-bottom: 20px;          
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;              
+  color: #e0e0e0;
+  margin-bottom: 30px;           
+  text-align: left;
+}
+
+.bb {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #18043f;                
+  background-color: #fff;        
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bb:hover {
+  background-color: #f0f0f0;     
+  transform: scale(1.05);        
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;     
+}
+
+.hero-image img {
+  max-width: 450px;             
+  width: 100%;
+  border-radius: 25px;           
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-content {
+    align-items: center;         
+  }
+
+  .hero-image {
+    justify-content: center;     
+  }
+}
+
+.hero .bb {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero img {
+  width: 250px;
+  border-radius: 20px;
+}
+.footer {
+   background: linear-gradient( #18043f, #280662);
+   padding: 20px;
+   text-align: center;
+   margin-top: 50px;
+}
+
+.footer h3 {
+   color: #cbd5f5;
+   font-size: 14px;
+}
+
+.proj {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #18043f, #280662);
+  color: #fff;
+  text-align: center;
+}
+
+.cad {
+  background: #2b0d59;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cad:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+h1 {
+  width: 100%;
+  margin-bottom: 40px;
+}
+/* Conteneur principal "À propos" */
+.pop {
+  padding: 100px 10%;
+  background: linear-gradient( #18043f, #280662);
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Centre tout le contenu horizontalement */
+  text-align: center;       /* Centre le texte */
+  color: #fff;
+}
+
+/* Titre "À propos de moi" */
+.bo {
+  font-size: 42px;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Petite barre décorative sous le titre */
+.bo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #fff; 
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Style du paragraphe */
+.pop p {
+  font-size: 18px;
+  line-height: 1.8;         /* Augmente l'espace entre les lignes */
+  max-width: 800px;         /* Limite la largeur pour une lecture confortable */
+  color: #d1d1d1;           /* Gris clair pour ne pas être trop agressif */
+  margin: 0 auto;           /* Centre le bloc de texte */
+}
+
+
+.pop p strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Version Mobile */
+@media (max-width: 768px) {
+  .pop {
+    padding: 60px 5%;
+  }
+  
+  .bo {
+    font-size: 32px;
+  }
+  
+  .pop p {
+    font-size: 16px;
+    text-align: justify;    
+  }
+}
+.contact {
+  padding: 80px;
+  background: #0f022c;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+/* Formulaire */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* --- RESPONSIVE MOBILE --- */
+
+@media (max-width: 500px) {
+ 
+
+  /* 2. Section Hero (Présentation) */
+  .hero {
+    flex-direction: column-reverse; /* L'image passe au-dessus du texte */
+    text-align: center;
+    padding: 40px 5%;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .hero-content {
+    align-items: center; /* Centre le texte et le bouton */
+  }
+
+  .hero h2 {
+    font-size: 32px; /* Texte plus petit pour mobile */
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    max-width: 280px; /* Réduit la taille de l'image de profil */
+  }
+
+  /* 3. Section Projets (Grille) */
+  .proj {
+    padding: 40px 20px;
+  }
+
+  .cad {
+    width: 100%; /* Les cartes prennent toute la largeur moins le padding */
+    max-width: 350px;
+  }
+
+  /* 4. Section À Propos */
+  .pop {
+    padding: 60px 7%;
+  }
+
+  .bo {
+    font-size: 28px;
+  }
+
+  .pop p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left; /* Plus lisible sur petit écran */
+  }
+
+  /* 5. Section Contact */
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact h2 {
+    font-size: 26px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* Ajustement pour les très petits écrans (iPhone SE, etc.) */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 26px;
+  }
+  
+  .nav h3 {
+    font-size: 20px;
+  }
+}
+
+/* ANIMATION (petit effet smooth) */
+html {
+   scroll-behavior: smooth;
+}
