@@ -126,14 +126,28 @@ nav h1 {
 .lien {
   display: none;
 }
+.menu {
+  display: flex;
+  justify-content: space-between; /* Espace maximum entre les deux éléments */
+  align-items: center;           /* Aligne verticalement au centre */
+  width: 100%;                   /* Important pour occuper toute la largeur */
+  padding: 15px 20px;            /* Ajustez l'espacement sur les bords */
+  box-sizing: border-box;        /* Évite le défilement horizontal */
+}
 
 .about {
-  background-color: goldenrod;
-  color: white;
-  padding: 10px 20px ;
+  /* Votre style actuel pour le bouton jaune */
+  background-color: #f1c40f; 
+  padding: 8px 16px;
   border-radius: 20px;
-font-size: 14px;
+  cursor: pointer;
 }
+
+.burguer {
+  cursor: pointer;
+  /* L'icône sera automatiquement poussée à droite par le parent flex */
+}
+
 
   
 }
