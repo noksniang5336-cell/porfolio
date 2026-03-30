@@ -57,7 +57,7 @@ nav .logo {
   text-align: center;
   padding: 10%;
   position: absolute;
-  background-color: rgb(80, 14, 80);
+  background-color: black;
   
 }
 
@@ -105,7 +105,6 @@ nav .logo {
 
   .burguer {
     display: block;
-    margin-left: auto;
   }
 
   nav {
@@ -115,10 +114,8 @@ nav .logo {
   position: fixed;
   width: 100%;
   z-index: 50;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: rgba(0, 0, 255, 0.768);
+ 
 }
 
 nav h1 {
@@ -129,34 +126,17 @@ nav h1 {
 .lien {
   display: none;
 }
-.lien_mobile {
-  position: fixed;   /* important */
-  top: 0;
-  right: 0;          /* colle à droite */
-  width: 70%;        /* largeur du menu */
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 40px;
-
-  background-color: #280662;
-  z-index: 1000;
-}
 
 .about {
   background-color: goldenrod;
   color: white;
   padding: 10px 20px ;
   border-radius: 20px;
-  font-size: 14px;
-  
+font-size: 14px;
 }
 
   
 }
-
 
 .bb{
    padding: 10px 20px;
@@ -233,7 +213,7 @@ nav h1 {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -443,7 +423,7 @@ h1 {
 }
 
 /* Version Mobile */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .pop {
     padding: 60px 5%;
   }
@@ -636,7 +616,7 @@ h1 {
 }
 
 /* Ajustement pour les très petits écrans (iPhone SE, etc.) */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .hero h2 {
     font-size: 26px;
   }
