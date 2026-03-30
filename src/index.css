@@ -114,7 +114,7 @@ nav .logo {
   position: fixed;
   width: 100%;
   z-index: 50;
-  background-color: rgba(0, 0, 255, 0.768);
+  background-color: transparent;
  
 }
 
@@ -354,6 +354,51 @@ nav h1 {
   background: rgba(255,255,255,0.05);
   padding: 15px;
   border-radius: 10px;
+}
+/* --- RESPONSIVE DESIGN (MOBILE) --- */
+@media (max-width: 768px) {
+  .detail {
+    padding: 20px 15px; /* Réduit les marges pour gagner de l'espace */
+  }
+
+  .title {
+    font-size: 26px; /* Titre un peu plus petit pour mobile */
+    margin-bottom: 30px;
+  }
+
+  .box_detail {
+    flex-direction: column; /* Emballe l'image au-dessus du texte */
+    gap: 30px;              /* Espace entre l'image et les infos */
+    text-align: center;     /* Centre le texte pour un look mobile propre */
+  }
+
+  .image_container, 
+  .info_container {
+    max-width: 100%; /* L'image et le texte prennent toute la largeur */
+    flex: none;
+  }
+
+  .image_container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .links {
+    justify-content: center; /* Centre les boutons Demo/Github */
+    flex-direction: column;  /* Aligne les boutons l'un sous l'autre sur petit mobile */
+    width: 100%;
+  }
+
+  .links a {
+    width: 100%;           /* Boutons larges pour faciliter le clic au pouce */
+    text-align: center;
+    padding: 12px;
+  }
+
+  .techno {
+    text-align: left;      /* Garde les technos alignées à gauche pour la lisibilité */
+    font-size: 14px;
+  }
 }
 
 .proj {
