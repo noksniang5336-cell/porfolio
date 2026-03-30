@@ -29,11 +29,11 @@ const Navbar = () => {
 
         {/* droite */}
          <div className="menu">
-            <div className="about">About</div>
-            <IoMenu 
-             onClick={() => setOpenMenu(!openMenu)}
-            className='burguer'  size={30} />
-         </div>
+             <NavLink to="/Apropos">
+               <button className="bb">Apropos</button>
+                </NavLink>
+               </div>
+        
 
          {/* volet  */}
 

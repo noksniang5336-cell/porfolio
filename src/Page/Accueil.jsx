@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import Project from "../Page/Project";
 import Contact from  "../Page/Contact";
 import Hero from  "../composants/Hero";
-import Apropos from  "../Page/Apropos";
+import Competences from '../composants/Competences';
+
     
     function Accueil (){
         return(
            
             <main>
                 <Hero/>
-                
                 <Project/>
+                <Competences/>
                 <Contact/>
             </main>
         )
